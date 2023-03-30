@@ -1,0 +1,280 @@
+---
+title: 'MATH 424: Multiple Linear Regression project'
+author: "Nathan Oliver"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+
+
+## Collaboration rules:  
+
+You may consult with up to two classmates for help with this project, but use your own data (must have different make/model/zip codes).  Please identify who you collaborate with here:
+
+Read this document before you submit it to ensure there is not a ton of extra output that does not contribute to the analysis or communication.  Also, I recommend using the spell-checker in RStudio (Edit -> Check Spelling).  Note that you will need to closely follow the instructions on the Canvas assignment page to complete this project successfully.  
+
+
+```{r, echo = F, warning=FALSE, message=FALSE}
+# clean-up R environment
+rm(list = ls())  
+
+# Load Packages 
+library(mosaic)
+library(ggformula)
+library(tidyverse)
+library(car)
+library(tinytex)
+library(GGally)
+
+knitr::opts_chunk$set(echo = F)  #make it be a default to not include the code, only the output, when you knit this document
+
+# suggestion for sourcing and wrangling data:
+
+raw_data1          <- read_csv("/Users/nathanoliver/Desktop/Spring 2023/Applied Stats/DataSets/nissanSeattle.csv")  # read in the first location data
+raw_data1$location <- "Seattle"                  # add a variable 'location' to the first dataset
+raw_data2          <- read_csv("/Users/nathanoliver/Desktop/Spring 2023/Applied Stats/DataSets/nissanChicago.csv") # read in the second location's data
+raw_data2$location <- "Chicago"                  # add a variable 'location' to the PA dataset
+car_data_raw <- rbind(raw_data1, raw_data2)        # smoosh the two datasets together by stacking the rows
+car_data_raw$age <- 2022 - car_data_raw$year               # create a new variable called age that tells us how old each car is.
+# Now you should write some code that filters the 0 price or 0 mileage observations
+true_data<- car_data_raw[apply(car_data_raw!=0, 1, all),]
+```
+
+
+# Introduction
+
+  In this project, I will be analyzing the price and mileage differences of the Nissan Maxima in Seattle (zip: 98101) and Chicago (zip: 60007). This vehicle was primarily chosen because I like Nissan and the Nissan Maxima is a sedan that I've always found desirable. I chose Seattle because that's my favorite city, and I chose Chicago because I find it to be extremely different both culturally and economically. This data has been sourced from http://myslu.stlawu.edu/~clee/dataset/autotrader/ , and the data requests were limited to 300 entries. After acquiring the data sets, they were merged together into one large data set with any vehicles containing zero values removed. Additionally, a column was added that computed the age of each individual vehicle. 
+
+   I think that the Nissan Maxima will be more expensive on average in Seattle. Seattle is a more expensive place to live, and is growing much faster than Chicago (which I believe is actually getting smaller these days). My assumption is that there is a much larger demand in Seattle over Chicago, resulting in higher prices.
+
+# Research question 1
+
+**Assuming a linear relationship between price and mileage, is there a difference in price between the locations?**
+
+### Exploratory data analysis
+
+Figure(s):
+
+
+```{r}
+with(true_data[true_data$location == "Chicago",], plot(mileage, price, main = "Nissan Maximas in Chicago"))
+chicdata <- true_data[true_data$location == "Chicago",]
+chicmeanprice = mean(chicdata$price)
+chicsdprice = sd(chicdata$price)
+chicmeanmileage = mean(chicdata$mileage)
+chicsdmileage = sd(chicdata$mileage)
+with(true_data[true_data$location == "Seattle",], plot(mileage, price, main = "Nissan Maximas in Seattle"))
+seadata <- true_data[true_data$location == "Seattle",]
+seameanprice = mean(seadata$price)
+seasdprice = sd(seadata$price)
+seameanmileage = mean(seadata$mileage)
+seasdmileage = sd(seadata$mileage)
+IndWA <- ifelse(true_data$location == 'Seattle', 1, 0)
+```
+```{r, include = F}
+chicmeanprice
+chicsdprice
+chicmeanmileage
+chicsdmileage
+seameanprice
+seasdprice
+seameanmileage
+seasdmileage
+```
+
+
+
+
+**EDA TABLE 1**
+
+|          |sample size | mean price  | sd of price | mean mileage | sd of mileage | 
+|:--------:|:----------:|:-----------:|:-----------:|:------------:|:-------------:|
+|Chicago   |     128    |    22.35    |     09.38   |      70.46   |      41.52    |
+|Seattle   |     50     |    22.14    |     10.30   |      72.72   |      46.00    |
+
+**Comments:**
+  Some of my first impressions of this data make me rather suspicious of any major differences. Both spreads of data look like they have almost the exact same intercept, and maybe a marginally different slope of regression. The mean prices between areas is almost identical. The standard deviation of price and mean of mileage are also remarkably similar. The only major difference of note is the standard deviation of mileage between areas. Even though the standard deviation of mileage of Seattle is a bit larger than Chicago, there is also notably less data. With more data from Seattle, we might see more of an impact from CLT that could result in a smaller standard deviation.
+
+
+### Model fitting
+
+
+**MODEL SUMMARY TABLE 1:**  (same slope different intercepts)
+
+```{r}
+sameslope <- lm(price~mileage + IndWA, data = true_data)
+ggplot(true_data,aes(x=mileage + IndWA,y=price,col=location))+geom_point()
+summary(sameslope)
+```
+|              |  estimate  |test-statistic| p-value | 
+|:------------:|:----------:|:------------:|:-------:|
+| intercept    |    36.12   |     49.25    |  <2e-16 | 
+| mileage      |    -0.19   |     -23.059  |  <2e-16 |  
+| location     |  0.237331  |     0.295    |   0.768 |  
+
+
+**MODEL SUMMARY TABLE 2:**  (different slopes and different intercepts)
+
+|              |  estimate  |test-statistic| p-value | 
+|:------------:|:----------:|:------------:|:-------:|
+| intercept    |    36.12   |     49.25    |  <2e-16 | 
+| mileage      |    -0.19   |    -23.059   |  <2e-16 |  
+| location     |  0.237331  |     0.295    |   0.768 |   
+
+```{r}
+int_model <- lm(price ~ mileage + IndWA + IndWA*mileage, data = true_data)
+ggplot(true_data,aes(x=mileage + IndWA + IndWA*mileage,y=price,col=location))+geom_point()
+summary(int_model)
+```
+
+Fitted model for (location 1):
+
+$$
+\widehat{SeattlePrice} = -0.19(Mileage) + 36.35386
+$$
+Fitted model for (location 2):
+
+$$
+\widehat{ChicagoPrice} = -0.19(Mileage) + 36.116857
+$$
+
+**Comments**
+ 
+ Between the two possible models, the lack of an interaction term resulted in a higher $r^2$ value. Having a higher $r^2$ with less regressors makes for a better model choice. Having a model that is dependent on less variables makes it more consistent and easier to manage. Normally our adjusted $r^2$ would go up whenever we add variables, but if it goes up when we have less variables we know that we have a much more efficient model. Even though the $r^2$ only increased a little bit, maybe even enough for it to be negligible, the reduction of an entire variable makes it a better choice. 
+
+### Assess
+
+Figures:
+
+```{r}
+plot(sameslope, which = 1)
+plot(sameslope, which = 2)
+plot(sameslope, which = 4)
+plot(sameslope, which = 5)
+```
+
+**Comments**
+  Surprisingly, it looks like all necessary conditions are met. The data is linear, the error looks quite normal, and the variance seems pretty equally distributed. My only real concern is the adjusted $r^2$ value for this model. With our residual and Q-Q plot, I would think that our adjusted $r^2$ value would be a bit higher. Hopefully in this next portion we can perform some adequate manipulation to improve the model.
+
+### Use
+
+  There is not enough evidence to suggest a statistically significant difference in price of a Nissan Maxima between Seattle and Chicago. Even though our data shows a difference in price of about $237, our p-value is not nearly low enough to be able to claim that this difference is statistically significant.  
+
+# Research Question 2
+
+**After accounting for a linear relationship between age and price and between mileage and price, is there a difference in price between the locations?**
+
+### Exploratory data analysis
+
+Figures:
+
+
+```{r}
+ggplot(true_data,aes(x=mileage,y=price,col=location))+geom_point()
+ggplot(true_data,aes(x=age,y=price,col=location))+geom_point()
+ggplot(true_data,aes(x=age,y=mileage,col=location))+geom_point()
+```
+
+**Comments**
+
+  It still looks like the relationship between price and mileage is quite linear. When comparing price and age as well as age and mileage, the relationship looks like it is no longer linear. Price and age looks like it has a negative exponential decay, while age and mileage looks like it has a bit of a "cornucopia" effect. As the age increases the variance in mileage increases dramatically. Both of these issues can potentially be solved with a logistic or exponential transformation. 
+
+### Model fitting
+
+```{r}
+adj_model <- lm(price ~ mileage + IndWA + log(age), data = true_data)
+summary(adj_model)
+```
+**SUMMARY TABLE 3:**
+
+|           | estimate | test-statistic | p-value | 
+|:---------:|:--------:|:--------------:|:-------:|
+| intercept |   40.54  |      77.22     | <2e-16  | 
+| mileage   |   -0.10  |     -13.049    | <2e-16  |  
+| log(age)  |   -7.29  |     -16.80     | <2e-16  |  
+| location  |    0.29  |       0.58     |  0.559  |  
+
+**Interpretations in context**
+
+ - intercept: We estimate the price of a brand new Nissan Maxima to be 40,540 dollars.
+ - mileage: For every 1,000 miles, holding other variables constant, the price of a Maxima decreases by an average of 100 dollars.
+ - age: For every log(year), while all other variables are constant, the price of a Maxima decreases by an average of 7,290 dollars. 
+ - location: With not enough statistical significance to make a confident claim, there is a difference of 290 dollars when all other variables are constant.
+
+### Assess
+
+Figures:
+
+```{r}
+plot(adj_model, which = 1)
+plot(adj_model, which = 2)
+plot(adj_model, which = 4)
+plot(adj_model, which = 5)
+```
+
+**Comments**
+
+  The conditions seem to be very well met with this model. The data seems to be quite linear, the error appears to be much more normal than our previous model, and the variance appears to be quite equal. Although some points are marked as outliers, the highest Cook's Distance value of any point is 0.11, which is very encouraging. I have no concerns with this model whatsoever, but I am curious if it can still be improved. 
+
+### Use
+
+  There still doesn't not appear to be a significant difference in price of Nissan Maximas between Seattle and Chicago. Although the estimated difference has increased with this model by 60 dollars, the p-value has decreased. That being said, the p-value is still above 0.5, so we do not have nearly enough evidence to suggest or claim that there is a statistically significant difference in price between Seattle and Chicago.
+
+# Research question 3
+
+**What is the best model for predicting price using the variables available?**
+
+### Choose
+
+Final fitted model:
+
+$$
+\widehat{Price} = -3.44log(Mileage) + 1.37log(Age) - 2.075[log(Mileage)*log(Age)] + 47.8734
+$$
+
+Summary of final model:
+
+```{r}
+fin_model <- lm(price ~ log(mileage) + IndWA + log(age) + log(mileage)*log(age), data = true_data)
+summary(fin_model)
+```
+
+**Comments**
+
+  I decided on this final model after a lot of trial and error along with some manipulation. Some of the variables positively impacted my adjusted $r^2$ value just by applying a logarithm, so I tried this with all of my variables, and even creating an interaction term out of them. This worked out quite well, with a final $r^2$ value of 0.9092. Although two of the variables have pretty high p-values, I'm much more satisfied with having a $r^2$ that is this high. Removing the variables with high p-values seems to negatively impact this model, so I believe their presence to be beneficial here. 
+
+### Assess
+
+Figures:
+
+```{r}
+plot(fin_model, which = 1)
+plot(fin_model, which = 2)
+plot(fin_model, which = 4)
+plot(fin_model, which = 5)
+```
+
+**Comments**
+
+  All necessary conditions are met with this model. The data is linear, the error is normally distributed, and variance is equal throughout the model. I believe many of the variables in this model to be "almost" linear but not quite, which is why applying logarithms seems to be so effective. For these reasons, as well as I very high $r^2$ value, this model seems to capture the data quite accurately. 
+
+### Use
+Location: Seattle
+
+Mileage = 40,000
+Age = 3 years
+Price = -3.44log(mileage) + 1.37log(age) - 2.075[log(mileage)*log(age)] + 47.8734
+
+```{r}
+newdata = data.frame(mileage = 40, age = 3, IndWA = 1) 
+predict(fin_model, newdata, interval="predict") 
+```
+
+  We predict a Nissan Maxima in Seattle that is 3 years old with 40,000 miles to be between 22,479 dollars and 34,063 dollars with 95% confidence. The predicted price is 28,271 dollars.
+
+
+# Conclusion
+  
+  In this project I learned that the difference in prices of Nissan Maximas between Chicago and Seattle is negligible. That being said, the price in Seattle is projected to be slightly higher. From the summary statistics in my final model, it seems that mileage was the biggest factor in price. We know this because it has the largest negative coefficient within our model summary. This is also in line with the previous models created in this project. Given the adjusted $r^2$ value of this model, I think it is a good one, but I think it can also be better. If we were able include any information about vehicle history, like the amount of money spent on repairs, or whether or not it was owned by a smoker, I believe the model could be improved quite a bit.   
+
