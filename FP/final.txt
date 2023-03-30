@@ -1,0 +1,19 @@
+Final Project Paper: Who Wants to be a Musical Millionaire?
+Nathan Oliver - CSCI 261B
+May 4, 2021
+
+Problem Description
+
+For this project I created a game of "Who Wants to be a Millionaire" but with music themed questions. Due to unfortunate trip planning, I was in Chicago while I initially wanted to do the majority of the work on this project, but alas, that wasn't the reason why I decided to cut some initially proposed ideas. It didn't take long for me to realize that writing the code for this game was going to require a certain level of complexity. With that level of complexity, some of my initial ideas seemed to be a bit beyond my ability, as well as unnecessary given the project description. These things include: phoneafriend(), 50/50(), reorganizeallscores(), showscoresclosetouser() and showmostchosenera(). I'm a little Disappointed that I wasn't able to include all this, but for the sake of making a game that works, as well has having all its necessary parts, I Thought it best to leave these things for another time. 
+
+Programmer Documentation
+
+My program is very easy to use. There is only one function on the main.cpp to get the user started. After that everything is automated by functions in the class. Whenever the user finishes a game, the scoresheet gets updated. The user will need to manually toggle to the scoresheet to view it. One important note: TYPE IN YOUR ANSWERS WITH CAPITAL LETTERS!!!! There's not much else to it, everything is prompted and easy to follow.
+
+Tests
+
+There isn't much testing I could run on this program other than playing it. I had to run routine tests to make sure inputs and outputs of functions were working properly, like inputting fake values and such. A also had to circumnavigate functions that weren't working properly to find issues with other functions that were utilizing those functions. Most of my tests involved hitting the play button to see how things performed, and making adjustments accordingly
+
+Reflections
+
+I learned a lot from this project. Most of all, coding takes patience. A lot of code design requires an element of creativity and problem solving, and it takes time to go about that process. I should've started this project a few more days in advance at least, and  I definitely should've gotten more help from tutors along the way, I could've made a bit more of a robust game that way. I also learned how useful outside sources are. In the past in this class, I had a hard time understanding outside sources when seeking help on how to code something properly, but now that my understanding has grown, it's much easier to understand the resources available online. I've found a few CPP databases to be helpful as well as stackoverflow.com.

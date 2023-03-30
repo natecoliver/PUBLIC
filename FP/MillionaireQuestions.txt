@@ -1,0 +1,628 @@
+$ 1 
+What city is considered to be the birthplace of Jazz?
+A. Chicago
+B. Detroit
+C. New Orleans
+D. New York 
+
+$ 2
+Fill in the blank. Jazz is characterized by _____.
+A. Blue notes
+B. Improvisation
+C. Polyrhythms and syncopation 
+D. All of the above
+
+$ 3
+Which of the following is not a style of Jazz?
+A. Swing
+B. Spin
+C. Bop
+D. Cool
+
+$ 4
+What heritage heavily influenced many styles of jazz?
+A. African
+B. European
+C. American
+D. Asian
+
+$ 5
+What instrument did Miles Davis play?
+A. Piano
+B. Saxophone
+C. Trumpet
+D. Bass
+
+$ 6
+Which one of the following people was not a pioneer of jazz music?
+A. Miles Davis
+B. Horace Silver
+C. Art Tatum
+D. Herbie Hancock
+
+$ 7
+What instrument did Dave Brubeck play?
+A. Piano
+B. Saxophone
+C. Trumpet
+D. Bass
+
+$ 8
+What do jazz musicians call it when they take turn playing solos?
+A. Switching off
+B. Trading solos
+C. Solo swap
+D. Alternating solos
+
+$ 9
+Which of these latin countries had the largest influences on jazz?
+A. Argentina
+B. Jamaca 
+C. Cuba
+D. Brazil
+
+$ 10
+Who is the song ‘Take Five’ performed by?
+A. Miles Davis Quintet
+B. Dave Holland Quintet
+C. The Dave Brubeck Quartet
+D. Clifford Brown
+
+$ 11
+In terms of BPM, in what range does Hard Bop fall?
+A. 60-120
+B. 120-150
+C. 150-180
+D. 180+
+
+$ 12
+What instrument did Dizzy Gillespie play?
+A. Trumpet
+B. Flugel Horn
+C. Trombone
+D. Cornet 
+
+$ 13
+What is it called when the founding leaders of a band have dies but the band continues to travel and work under new direction?
+A. Zombie band
+B. Cover band
+C. Ghost band
+D. Resurrection band
+
+$ 14
+What color is most associated with Jazz?
+A. Green
+B. Red
+C. Purple
+D. Blue
+
+$ 15
+Which of these instruments does not have a reed?
+A. Cornet
+B. Soprano Saxophone
+C. Bass Clarinet
+D. Oboe
+
+$ 16
+Which of the four beats in a measure of 4/4 is most important in Jazz?
+A. 1
+B. 2
+C. 3
+D. 4
+
+$ 17
+What instrument did Bill Evans play?
+A. Piano
+B. Bass
+C. Drums
+D. Saxophone
+
+$ 18
+Which of these clave patterns has become most prevalent in popular music, directly from Jazz?
+A. 2-3
+B. 3-2
+C. Son 2-3
+D. Son 3-2
+
+$ 19
+What his the name of the drummer’s two cymbals that are laid on top of each other?
+A. Ride Cymbals
+B. Trash Cymbals
+C. Hi-Hat Cymbals
+D. Crash Cymbals
+
+$ 20
+What is the most common style of Jazz, or the most stereotypical?
+A. Cubano
+B. Tango
+C. Merengue
+D. Swing
+
+$ 21
+What famous Duke Ellington song was featured in the recent film ‘Judas and the Black Messiah’?
+A. Caravan
+B. Fleurette Africaine 
+C. I Can’t Get Started
+D. Very Special 
+
+$ 22
+What kind of saxophone did Bill Clinton play?
+A. Soprano
+B. Alto
+C. Tenor
+D. Baritone
+
+$ 23
+Which of these pieces was not made famous by Miles Davis?
+A. Giant Steps
+B. Oleo
+C. Nefertiti
+D. Emannuel
+
+$ 24
+On Ahmad Jamal’s album ’Live at the Pershing’, why were some of the songs well recognized?
+A. A few were show tunes
+B. A few were renditions of classical music
+C. A few were popular covers
+D. They had been playing the same songs for months
+
+$ 25
+What musical did Oscar Peterson famously cover with his trio?
+A. Bye Bye Birdie
+B. West Side Story
+C. The Music Man
+D. Wicked
+
+$ 26
+What weapon was Charles Mingus famous for using in his apartment?
+A. An axe
+B. An antique rifle
+C. A shotgun
+D. An excessively large butcher knife
+
+$ 27
+Which of these drummers famously collaborated with Clifford Brown?
+A. Max Roach
+B. Mike Colenburg
+C. Gene Krupa
+D. John Bonham
+
+$ 28
+Which of these is one of Count Basie’s most famous albums?
+A. Bombastic Basie
+B. Atomic Basie
+C. Catatonic Basie
+D. Pure Basie
+
+$ 29
+What genre of music is Robert Glasper (modern day) most famous for blending heavily into Jazz?
+A. Latin
+B. Rock
+C. Chill-Wave
+D. Hip-Hop
+
+$ 30
+What part of the brain do Jazz Musicians activate while playing?
+A. Prefrontal Cortex
+B. Somatosensory Cortex
+C. Parietal Lobe
+D. Occipital Lobe
+
+$ 31
+What was Mozart’s first name?
+A. Frederick
+B. James
+C. Wolfgang
+D. Amadeus 
+
+$ 32
+Which famous composer went deaf in his later age, while still writing music?
+A. Beethoven
+B. Bach
+C. Mozart
+D. Tchaichovsky 
+
+$ 33
+To what era of classical music did Chopin, Rachmaninoff, and Liszt belong?
+A. Baroque
+B. Modern
+C. Post-Modern
+D. Romantic
+
+$ 34
+Which string instrument is largest?
+A. Fiddle
+B. Violin
+C. Viola
+D. Cello
+
+$ 35
+Why were some songs during medieval times only performed for the pope?
+A. They were deemed “too beautiful” for human ears.
+B. They were written by convicts.
+C. They contained explicit language.
+D. They were too sad.
+
+$ 36
+What instrument was the predecessor to the piano?
+A. The guitar
+B. The harpsichord
+C. The violin
+D. The viola
+
+$ 37
+Who wrote the famous piece ‘Clair de Lune’?
+A. Dvorshorak 
+B. Tchaichovsky
+C. Chopin
+D. Debussy
+
+$ 38
+Which classical brass instrument is the oldest?
+A. French Horn
+B. Euphonium
+C. Trombone
+D. Tuba
+
+$ 39
+Which of these composers most represents the Baroque era of classical music?
+A. Beethoven
+B. Mozart
+C. Dvorshorak
+D. Bach
+
+$ 40
+Why are Mozart’s sonatas often used for educating children on piano?
+A. The focus on simplicity
+B. The inclusion of technical exercises
+C. The approachability of the key and chord structure
+D. All of the above
+
+$ 41
+Who wrote the famous piano prelude that later became known as ‘Raindrops’?
+A. Chopin
+B. Schuman
+C. Schubert
+D. Bach
+
+$ 42
+Which composer featured an important technical exercise in each on of his etudes?
+A. Mozart
+B. Chopin
+C. Liszt
+D. Rachmaninoff
+
+$ 43
+What was Rachmaninoff’s first name?
+A. Jean-Claude
+B. Gregorio
+C. Rubert
+D. Sergei
+
+$ 44
+Which pianist is considered to be equal to Rachmaninoff in terms of technical prowess?
+A. Chopin
+B. Liszt
+C. Beethoven
+D. Mozart
+
+$ 45
+Which instrument did Bach famously play?
+A. Piano
+B. Organ
+C. Harpsichord
+D. Synthesizer
+
+$ 46
+Which one of these is not a ballet written by Tchaichovsky?
+A. The Sleeping Beauty
+B. The Nutcracker
+C. Swan Lake
+D. Romano Talenti
+
+$ 47
+In what languages were most classical operas written?
+A. Italian
+B. Spanish
+C. German
+D. Yiddish
+
+$ 48
+Where was Debussy from?
+A. Germany
+B. Poland
+C. England
+D. France
+
+$ 49
+Where did Frederic Chopin go to school?
+A. Paris
+B. Warsaw
+C. Istanbul
+D. St. Petersburg
+
+$ 50
+Who was known for having the “biggest hands in piano?”
+A. Rachmaninoff
+B. Liszt
+C. Both
+D. Neither
+
+$ 51
+Which of Rachmaninoff’s piano concertos is popularly known to be most difficult?
+A. The first
+B. The second
+C. The third
+D. None
+
+$ 52
+Which pianist famously imitated Chopin in his Carnaval works?
+A. Schubert
+B. Schumann
+C. Tchaichovsky
+D. Rachmaninoff
+
+$ 53
+In Claire de Lune by Debussy, there is only one note marked with an accent mark. What is it?
+A. Middle C
+B. F Sharp
+C. B Flat
+D. G Flat
+
+$ 54
+What part of Chopin’s body is now memorialized?
+A. His hands
+B. His heart
+C. His brain
+D. His skull
+
+$ 55
+Which of these attributes made Rachmaninoff so well renowned?
+A. Elation and positivity
+B. Experimentation with key structure and time signature
+C. Incredible emotional and technical complexity
+D. Some of the biggest chords in classical music
+
+$ 56
+What aspect of the harpsichord gave its characteristic sound?
+A. The shape
+B. The type of wood used
+C. The types of hammers on the strings
+D. The strings were plucked
+
+$ 57
+What are the two Opus numbers for Chopin’s nocturnes?
+A. 9 and 72
+B. 13 and 43
+C. 14 and 47
+D. 3 and 14
+
+$ 58
+This one is the only freebie in the game. Just enter “A”
+
+$ 59
+What is the name of different versions of chords on the piano?
+A. Conversions
+B. Submersions
+C. Inversions
+D. Hamburgsions
+
+$ 60
+How much should you like classical music?
+A. A little, it’s important to know about
+B. Some, there’s some important influence and pieces 
+C. A lot, it’s super cool and Nathan’s favorite!
+D. Not at all, I don’t want to get $1,000,000
+
+$ 61
+What is the most well known pseudonym for rapper Eminem?
+A. Slim Jim
+B. Shady Drank
+C. Slim Shady
+D. Eazy E
+
+$ 62
+Who made their famous break from the group ‘Destiny’s Child’?
+A. Christina Aguilera 
+B. Beyonce
+C. Kelly Clarkson
+D. Britney Spears
+
+$ 63
+Which singer came out with the pop hit ‘Love Story’?
+A. Taylor Swift
+B. Kelly Clarkson
+C. Jessica Simpson
+D. Michael Jackson
+
+$ 64
+Which singer made their famous break from the group ‘InSync’?
+A. Buddy Holiday
+B. Chuck Berry
+C. Justin Timberlake
+D. Kanye West
+
+$ 65
+Fill in the blank. Shakira has a song called ‘____ Don’t Lie’.
+A. Boys
+B. Love
+C. Ears
+D. Hips
+
+$ 66
+What was the name of Kanye West’s album that includes tracks ‘Good Morning’, ‘Stronger’, and ‘Can’t Tell Me Nothing’? 
+A. Proclamation
+B. Graduation
+C. Salivation
+D. Trepidation
+
+$ 67
+Fill in the blank. Britney Spears released the famous hit ‘…____ One More Time.’
+A. Honey
+B. Cutie
+C. Papi
+D. Baby
+
+$ 68
+Which artist has a Mean Girls themed music video?
+A. Justin Bieber
+B. Ariana Grande
+C. Regina George
+D. Lindsay Lohan
+
+$ 69
+Fill in the blank In the song ‘Stacy’s Mom’, there is a lyric that reads “I know it might be wrong, but ______ Stacy’s mom.’
+A. I’m in love with
+B. I could vibe with 
+C. I might run with
+D. I always hate
+
+$ 70
+Michael Jackson is considered the King of Pop. Which of these girls is not his lover?
+A. Dirty Diana
+B. Regina
+C. Billy Jean
+D. Judith
+
+$ 71
+In what year did Kanye West storm the VMA stage and proclaim that Beyonce should’ve received album of the year instead of Taylor Swift?
+A. 2008
+B. 2006
+C. 2010
+D. 2007
+
+$ 72
+What was the color of Beyonce’s dress in the music video for the song ‘Formation’?
+A. Black
+B. Red
+C. Yellow
+D. Blue
+
+$ 73
+What artist was contracted by Disney to write the soundtrack for the animated film ‘Tarzan’?
+A. Genesis
+B. The Talking Heads
+C. Yellow
+D. Phil Collins
+
+$ 74
+What dance fad was created by the group ‘Cali Swag District’?
+A. Wop
+B. Dougie
+C. Stanky Leg
+D. Twerk
+
+$ 75
+Michael Jackson made various dance moves famous. Which of these is not of his creation?
+A. The Moonwalk
+B. The Lean
+C. Toe Stand
+D. The Coffee Grinder
+
+$ 76
+Which of the following is not a member of ’Spice Girls’?
+A. Ginger Spice
+B. Spooky Spice
+C. Baby Spice
+D. Sporty Spice
+
+$ 77
+Which famous artist created the streaming service Tidal?
+A. Jay-Z
+B. Kanye West
+C. Dr. Dre
+D. Justin Timberlake
+
+$ 78
+In the hit song ‘Fergalicious,’ what two words does Fergie spell out during the song?
+A. Glamorous & Tasty
+B. Boys & Loco
+C. Fergalicious & Delicious
+D. Tasty & Delicious
+
+$ 79
+Which band made the famous song ‘Take on Me?’
+A. Hee-hee
+B. a-ha
+C. hoohee
+D. ha-ha
+
+$ 80
+Which of these is not a self-descriptive object in ‘Don’t Stop Me Now’ by Queen?
+A. Shooting Star
+B. Sex Machine
+C. Rocket Ship
+D. Robo Cop
+
+$ 81
+The Notorious B.I.G. famously samples ’Between the Sheets’ by The Isley Brothers. In which song does it appear?
+A. Juicy
+B. Party and Bull$hit
+C. Hypnotize
+D. Big Poppa
+
+$ 82
+What song did Ed Sheeran write about Ellie Goulding?
+A. Shape of You
+B. Don’t
+C. Perfect
+D. Thinking out Loud
+
+$ 83
+What song by Steeley Dan is sampled in MF Doom’s song ‘Gas Drawls’?
+A. Black Cow
+B. Kid Charlemagne 
+C. Dirty Work
+D. Do It Again 
+ 
+$ 84
+What band lost all rights to their one hit wonder to the Rolling Stone’s song is a copyright lawsuit?
+A. The Kooks 
+B. Jet
+C. The Verve
+D. The Raconteurs  
+
+$ 85
+How old was Nas when he wrote the album ‘Illmatic’?
+A. 15
+B. 23
+C. 17
+D. 21
+
+$ 86
+Which of the following ABBA songs does not appear in the musical ‘Mama Mia’?
+A. The Winner Takes It All
+B. On And On And On
+C. Super Trouper
+D. Money, Money, Money
+
+$ 87
+Which singer has a tattoo of a moth on his chest?
+A. Aaron Carter
+B. Adam Levine
+C. Harry Styles
+D. Justin Bieber 
+
+$ 88
+Which of the following actors released a jazz album in the past five years?
+A. Will Smith
+B. Ice Cube
+C. Ryan Gosling 
+D. Jamie Fox
+
+$ 89
+Who popularized Tove Lo’s song ‘Stay High’ with their 2014 Remix?
+A. Hippie Sabotage
+B. Snakehips
+C. Flume
+D. Disclosure 
+
+$ 90
+Which one of Billie Eilish’s songs samples a video game?
+A. ocean eyes
+B. bad guy
+C. my strange additction
+D. ilomilo
+
+$
+
